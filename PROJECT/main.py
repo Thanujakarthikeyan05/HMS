@@ -14,6 +14,8 @@ local_server= True
 app = Flask(__name__)
 app.secret_key='hmsprojects'
 
+if __name__ == '__main__':
+    app.run()
 
 # this is for getting unique user access
 login_manager=LoginManager(app)
